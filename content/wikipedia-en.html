@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wikipedia Portal</title>
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="http://localhost/ratchet-2.0.2/dist/css/ratchet.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://localhost/css/style.css">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script href="http://localhost/ratchet-2.0.2/dist/js/ratchet.js"></script>
+    
+    <script href="http://localhost/js/main.js"></script>
+</head>
+
+<body>
+  <header class="bar bar-nav">
+      <a href="http://localhost/index.html"class="icon icon-left-nav pull-left"></a>
+    <h1 class="title">Wikipedia Portal</h1>
+  </header>
+
+  <iframe class="content_iframe" src="http://localhost:8078/wikipedia_en_all_novid_2018-10/"></iframe>
+
+  <!-- Tab Bar -->
+  <nav class="bar bar-tab">
+    <a class="tab-item active" href="http://localhost/">
+      <span class="icon icon-home"></span>
+      <span class="tab-label">Home</span>
+    </a>
+    <a class="tab-item" href="http://localhost/about.html">
+      <span class="icon icon-info"></span>
+      <span class="tab-label">About</span>
+    </a>
+    <a class="tab-item" href="http://localhost/settings.html">
+      <span class="icon icon-gear"></span>
+      <span class="tab-label">Settings</span>
+    </a>
+  </nav>
+</body>
+
+</html>
