@@ -1,98 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Elpis Digital Hub</title>
-
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elpis Digital-Hub</title>
 
     <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  
-    <!-- Include the compiled Ratchet CSS -->
-    <link href="http://192.168.4.1/ratchet-2.0.2/dist/css/ratchet.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://192.168.4.1/css/style.css">
 
-    <!-- Include the compiled Ratchet JS -->
-    <script href="http://192.168.4.1/ratchet-2.0.2/dist/js/ratchet.js"></script>
-    
-    <script href="http://192.168.4.1/js/main.js"></script>
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="http://localhost/dev-digital-information-hub-rpi/ratchet-2.0.2/dist/css/ratchet.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://localhost/dev-digital-information-hub-rpi/css/style.css" rel="stylesheet">
 </head>
 
 <body>
+    <header class="bar bar-nav">
+        <!-- Continue to start menu -->
+        <a href="http://localhost/start-en.html" class="icon icon-right-nav pull-right"></a>
+        <h1 class="title">Choose Language</h1>
+    </header>
 
-  <!-- Make sure all your bars are the first things in your <body> -->
-  <header class="bar bar-nav">
-    <h1 class="title">Welcome</h1>
-  </header>
-
-  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-  <div class="content">
-    <div class="content-padded">
-      <p>You've arrived at the Elpis Digital Hub. Available resources include Wikipedia, TEDx videos,
-        E-Books provided by Project Gutenberg, and a variety of educational videos and games
-        for Science, Technology, Engineering and Mathematics.
-      </p>
-      <a href="http://192.168.4.1/content/phet-fr.html" target="_self">
-        <button class="btn btn-block">Phet Simulations</button>
-      </a>
-      <a href="http://192.168.4.1/content/chemistry-en.html" target="_self">
-        <button class="btn btn-block">Chemistry</button>
-      </a>
-      <a href="http://192.168.4.1/content/physics-en.html" target="_self">
-        <button class="btn btn-block">Physics</button>
-      </a>
-      <a href="http://192.168.4.1/content/math-en.html" target="_self">
-        <button class="btn btn-block">Mathematics</button>
-      </a>
-      <a href="http://192.168.4.1/content/medicine-en.html" target="_self">
-        <button class="btn btn-block">Medicine</button>
-      </a>
-      <a href="http://192.168.4.1/content/crashcourse-en.html" target="_self">
-        <button class="btn btn-block">Crash Course Videos</button>
-      </a>
-      <a href="http://192.168.4.1/content/wikipedia-en.html" target="_self">
-        <button class="btn btn-block">Wikipedia</button>
-      </a>
-      <a href="http://192.168.4.1/content/comp-science-en.html" target="_self">
-        <button class="btn btn-block">Computer Science</button>
-      </a>
-      <a href="http://192.168.4.1/content/molcell-en.html" target="_self">
-        <button class="btn btn-block">Biology</button>
-      </a>
-      <a href="http://192.168.4.1/content/schools-en.html" target="_self">
-        <button class="btn btn-block">For Schools</button>
-      </a>
-      <a href="http://192.168.4.1/content/ted-geneva-en.html" target="_self">
-        <button class="btn btn-block">TEDx Geneva</button>
-      </a>
-      <a href="http://192.168.4.1/content/ted-lausanne-en.html" target="_self">
-        <button class="btn btn-block">TEDx Lausanne</button>
-      </a>
-      <a href="http://192.168.4.1/content/wikivoyage-en.html" target="_self">
-        <button class="btn btn-block">Travel Guidebook</button>
-      </a>
+    <!-- Language notice -->
+    <div class="lang-notice">
+        <h6><b style="text-decoration: underline">Note:</b> Language choice impacts the content that is
+            available to
+            you. You can always change the platform language in <em>Settings</em>.</h6>
     </div>
-  </div>
-  <!-- Tab Bar -->
-  <nav class="bar bar-tab">
-    <a class="tab-item active" href="http://192.168.4.1/index.html">
-      <span class="icon icon-home"></span>
-      <span class="tab-label">Home</span>
-    </a>
-    <a class="tab-item" href="http://192.168.4.1/about.html">
-      <span class="icon icon-info"></span>
-      <span class="tab-label">About</span>
-    </a>
-    <a class="tab-item" href="http://192.168.4.1/settings.html">
-      <span class="icon icon-gear"></span>
-      <span class="tab-label">Settings</span>
-    </a>
-  </nav>
 
-
+    <!-- Modal for language change -->
+    <div id="lang-modal" style="display: none;">
+            <p>Only select one language</p>
+    </div>
+    <!-- Language settings -->
+    <div class="language-toggles">
+        <div class="english-lang-choice">
+            <div id="english-language-choice">
+                <p>English</p>
+            </div>
+            <div id="english-toggle">
+                <div class="toggle active">
+                    <div class="toggle-handle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="french-lang-choice">
+            <div id="french-language-choice">
+                <p>French</p>
+            </div>
+            <div id="french-toggle">
+                <div class="toggle">
+                    <div class="toggle-handle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Include the compiled Ratchet JS -->
+    <script src="http://localhost/dev-digital-information-hub-rpi/ratchet-2.0.2/dist/js/ratchet.js"></script>
+    <script src="http://localhost/dev-digital-information-hub-rpi/js/main.js"></script>
 </body>
 
 </html>
