@@ -24,12 +24,12 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-.lang-notice {
+#lang-notice {
     margin-top: 54px;
     padding: 0px 10px 0px 10px;
     text-align: justify;
 }
-.lang-notice h6 {
+#lang-notice h6 {
     line-height: 1.6;
 }
 .language-toggles {
@@ -48,6 +48,10 @@
   padding-right: 1em;
 }
 
+#french-language-choice {
+    padding-right: 0.6em;
+}
+
 #english-toggle, #french-toggle {
       display: inline-block;
       position: relative;
@@ -59,5 +63,8 @@
 #continueToStartMenu {
     position: fixed;
     bottom: 0;
+}
+#startLink {
+    color: gainsboro;
 }
 
