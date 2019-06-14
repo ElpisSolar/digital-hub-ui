@@ -68,3 +68,22 @@
     color: gainsboro;
 }
 
+/* Language settings */
+.language-btn-settings {
+    text-align: center;
+    position: relative;
+    top: calc(100vh/3);
+    width: 100px;
+    margin: 0 auto;
+}
+.language-btn-settings button {
+    margin-bottom: 3em;
+    transform: scale(1.5);
+}
+
+#settings-header {
+    position: relative;
+    top: 100px;
+    margin: auto;
+    text-align: center !important;
+}

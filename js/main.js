@@ -12,8 +12,8 @@ var englishActive = false;
 /* language notice html content*/
 var frenchNoticeContent = "<h6><b style='text-decoration: underline'>Remarque:</b> Le choix de la langue a une incidence sur le contenu qui vous est offert. Vous pouvez toujours changer la langue de la plate-forme dans Paramètres</em>.</h6>"
 var englishNoticeContent = "<h6><b style='text-decoration: underline'>Note:</b> Language choice impacts the content that is available to you. You can always change the platform language in <em>Settings</em>.</h6>"
-var englishSiteLink = "http://localhost/dev-digital-information-hub-rpi/start-en.html"
-var frenchSiteLink = "http://localhost/dev-digital-information-hub-rpi/start-fr.html"
+var englishSiteLink = "http://localhost/content/en/nav/start-en.html"
+var frenchSiteLink = "http://localhost/content/fr/nav/start-fr.html"
 
 /* language toggle event-listeners */
 frenchToggle.addEventListener("click", function () {
