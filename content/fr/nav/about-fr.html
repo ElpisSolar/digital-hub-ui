@@ -7,48 +7,75 @@
 
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
-    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  
-    <!-- Include the compiled Ratchet CSS -->
-    <link href="http://localhost/ratchet-2.0.2/dist/css/ratchet.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://localhost/css/style.css">
+  <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <!-- Include the compiled Ratchet JS -->
-    <script href="http://localhost/ratchet-2.0.2/dist/js/ratchet.js"></script>
-    
-    <script href="http://localhost/js/main.js"></script>
+  <!-- Include the compiled Ratchet CSS -->
+  <link href="http://localhost/ratchet-2.0.2/dist/css/ratchet.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://localhost/css/style.css">
+
+  <!-- Include the compiled Ratchet JS -->
+  <script href="http://localhost/ratchet-2.0.2/dist/js/ratchet.js"></script>
+
+  <script href="http://localhost/js/main.js"></script>
 </head>
 
 <body>
 
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar bar-nav">
-    <h1 class="title">Bienvenue</h1>
+    <h1 class="title">A Propos</h1>
   </header>
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
-    <div class="content-padded">
-      <p>Page d'accueil</p>
+    <div class="content-padded about-section">
+      <h3 style="padding: 0.5em; background-color: royalblue; color: white;">Notre vision est de fournir du contenu
+        numérique gratuit à ceux qui n'ont pas accès à Internet.</h3><br>
+      <div class="about-description-text">
+        <!--<h3><u>How it works:</u></h3>-->
+        <p>Vous accédez à ce centre numérique par l'intermédiaire d'un petit ordinateur, Raspberry Pi, contenu dans
+          toutes nos unités à énergie solaire. Il dispose d'un module Wi-Fi intégré grâce auquel nous pouvons créer un
+          point d'accès sans fil (WAP). En utilisant le WAP, nous sommes en mesure de transformer cet ordinateur à
+          faible coût en serveur, et donc de fournir un grand nombre de contenus numériques aux utilisateurs de
+          téléphones mobiles proches tels que vous.</p><br>
+        <img class="about-img" src="http://localhost/content/img/rpi.png" alt="raspberry-pi illustration">
+        <!--<h3><u>The Digital-Hub:</u></h3>-->
+        <p>Ce qui réunit tout cela, c'est la plate-forme numérique, une interface utilisateur qui permet aux gens
+          d'accéder au contenu. Jusqu'à présent, nous avons déployé des centres numériques arabes dans les camps de
+          réfugiés en Grèce contenant des guides d'information sur la santé mentale, les soins de santé des femmes et
+          une bibliothèque de livres électroniques, allant des manuels scolaires aux livres pour enfants. Notre objectif
+          est de rassembler et de déployer du contenu pour tous les contextes géographiques, et de travailler en étroite
+          collaboration avec les utilisateurs pour fournir le contenu le plus utile possible.</p>
+        <h5>Nous contacter:</h5>
+        <p>
+          Nous cherchons toujours à améliorer nos offres pour vous. Qu'il s'agisse de contenus numériques spécifiques
+          adaptés à vos besoins ou de l'amélioration de l'infrastructure solaire que nous proposons (chargeurs
+          solaires), votre avis nous intéresse ! Pour nous contacter, veuillez visiter notre site Web à <span
+            style="color: royalblue;">www.elpissolar.com</span> et cliquer sur le bouton <b>Contactez-nous</b>. Sinon,
+          veuillez laisser tout commentaire que vous avez au sujet de ce service à la personne qui exploite l'entreprise
+          de recharge de téléphones mobiles solaires.
+        </p>
+      </div>
     </div>
+  </div>
 
-    <!-- Tab Bar -->
-    <nav class="bar bar-tab">
-      <a class="tab-item" href="http://localhost/content/fr/nav/start-fr.html">
-        <span class="icon icon-home"></span>
-        <span class="tab-label">Accueil</span>
-      </a>
-      <a class="tab-item active" href="http://localhost/content/fr/nav/about-fr.html">
-        <span class="icon icon-info"></span>
-        <span class="tab-label">A Propos</span>
-      </a>
-      <a class="tab-item" href="http://localhost/content/fr/nav/settings-fr.html">
-        <span class="icon icon-gear"></span>
-        <span class="tab-label">Reglages</span>
-      </a>
-    </nav>
+  <!-- Tab Bar -->
+  <nav class="bar bar-tab">
+    <a class="tab-item" href="http://localhost/content/fr/nav/start-fr.html">
+      <span class="icon icon-home"></span>
+      <span class="tab-label">Accueil</span>
+    </a>
+    <a class="tab-item active" href="http://localhost/content/fr/nav/about-fr.html">
+      <span class="icon icon-info"></span>
+      <span class="tab-label">A Propos</span>
+    </a>
+    <a class="tab-item" href="http://localhost/content/fr/nav/settings-fr.html">
+      <span class="icon icon-gear"></span>
+      <span class="tab-label">Réglages</span>
+    </a>
+  </nav>
 
 
 </body>
