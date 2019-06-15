@@ -79,6 +79,11 @@
 .language-btn-settings button {
     margin-bottom: 3em;
     transform: scale(1.5);
+    border: 1px solid #fafafa;
+    background-color:royalblue;
+    color: white;
+    height: 2.5em;
+    width: 6em;
 }
 
 #settings-header {
@@ -86,4 +91,32 @@
     top: 100px;
     margin: auto;
     text-align: center !important;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.about-section {
+    text-align: justify;
+}
+
+.about-description-text {
+    padding: 0.5em;
+    line-height: 1.25em;
+}
+
+.about-img {
+    width: 80vw; 
+    margin: auto; 
+    display: block; 
+    margin-bottom: 2em;
+}
+
+.welcome-text {
+    text-align: justify;
+    padding: 1em;
+}
+
+.btn {
+    font-weight: 600;
+    color: royalblue;
 }
