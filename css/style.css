@@ -32,13 +32,30 @@
 #lang-notice h6 {
     line-height: 1.6;
 }
-.language-toggles {
+.language-toggles, .os-choice {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.os-choice img {
+    width: 20vw;
+    display: block;
+    margin: 6em;
+}
+
+.os-choice p {
+    text-align: center;
+}
+
+.os-choice button {
+    display: block;
+    margin: auto;
+    top: -5.5em;
+    transform: scale(1.5);
 }
 .language-toggles p {
     margin-bottom: 0;

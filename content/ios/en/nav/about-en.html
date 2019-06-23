@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Elpis Digital Hub</title>
+
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+  <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Include the compiled Ratchet CSS -->
+  <link href="http://localhost/ratchet-2.0.2/dist/css/ratchet.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://localhost/css/style.css">
+
+  <!-- Include the compiled Ratchet JS -->
+  <script href="http://localhost/ratchet-2.0.2/dist/js/ratchet.js"></script>
+
+  <script href="http://localhost/js/main.js"></script>
+</head>
+
+<body>
+
+  <!-- Make sure all your bars are the first things in your <body> -->
+  <header class="bar bar-nav">
+    <h1 class="title">About</h1>
+  </header>
+
+  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+  <div class="content">
+    <div class="content-padded about-section">
+      <h3 style="padding: 0.5em; background-color: royalblue; color: white;">Our vision is to provide free digital
+        content to those who have no access to the internet.</h3><br>
+      <div class="about-description-text">
+        <!--<h3><u>How it works:</u></h3>-->
+        <p>You are accessing this digital-hub through a Raspberry Pi, a small computer, contained within all of our
+          solar-powered units. It has an integrated Wi-Fi module through which we can create a Wireless Access Point
+          (WAP). Using the WAP, we are able to turn this low cost computer into a server, and thereby can provide a host
+          of digital content to nearby mobile phone users such as yourself.</p><br>
+          <img class="about-img" src="http://localhost/content/img/rpi.png" alt="raspberry-pi illustration">
+        <!--<h3><u>The Digital-Hub:</u></h3>-->
+        <p>What brings it all together is the digital hub, a user-interface that allows people to access the content
+          stored on our devices through their mobile phones. So far we have deployed Arabic digital-hubs across refugee
+          camps in Greece containing informational guides on mental health, women's healthcare, and a library of
+          e-books, ranging from educational textbooks to children’s books. Our goal is to gather and deploy content for
+          all geographical contexts, and work closely with users to provide the most useful content possible.</p>
+        <h5>Contact us:</h5>
+        <p>We are always looking to improve our offerings to you. Whether it is specific types of digital content suited to your needs,
+          or improvements to the solar infrastructure we provide (solar charging stations), we value your opinion! To contact us please
+          visit our website at <span style="color: royalblue;">www.elpissolar.com</span> and click on the <b>contact us</b> button. Alternatively please leave any feedback you 
+          have regarding this service with the person who is operating the solar mobile phone charging business.
+        </p>
+        </div>
+    </div>
+    </div>
+
+    <!-- Tab Bar -->
+    <nav class="bar bar-tab">
+      <a class="tab-item" href="http://localhost/content/ios/en/nav/start-en.html">
+        <span class="icon icon-home"></span>
+        <span class="tab-label">Home</span>
+      </a>
+      <a class="tab-item active" href="http://localhost/content/ios/en/nav/about-en.html">
+        <span class="icon icon-info"></span>
+        <span class="tab-label">About</span>
+      </a>
+      <a class="tab-item" href="http://localhost/content/ios/en/nav/settings-en.html">
+        <span class="icon icon-gear"></span>
+        <span class="tab-label">Settings</span>
+      </a>
+    </nav>
+
+
+</body>
+
+</html>

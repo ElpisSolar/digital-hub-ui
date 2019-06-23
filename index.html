@@ -19,43 +19,19 @@
 <body>
     <header class="bar bar-nav">
         <!-- Continue to start menu -->
-        <a id="startLink" href="#" class="icon icon-right-nav pull-right"></a>
-        <h1 class="title">Choose Language</h1>
+        <h1 class="title">Choose Operating System</h1>
     </header>
 
-    <!-- Language notice -->
-    <div id="lang-notice"></div>
-
-    <!-- Modal for language change -->
-    <div id="lang-modal" style="display: none;">
-            <p>Only select one language</p>
+    <!-- OS settings -->
+    <div class="os-choice">
+        <img src="content/img/android.svg" alt="android-device">
+        <a id="androidBtn" href="http://localhost/conf/langconf.html" target="_self">
+            <button class="btn"><span class="icon icon-play"></span>Android</button>
+        </a>
+        <img src="content/img/apple.svg" alt="apple-device">
+        <a id="iosBtn" href="http://localhost/conf/langconf-ios.html" target="_self">
+            <button class="btn"><span class="icon icon-play"></span>iOS</button></a>
     </div>
-    <!-- Language settings -->
-    <div class="language-toggles">
-        <div class="english-lang-choice">
-            <div id="english-language-choice">
-                <p>English</p>
-            </div>
-            <div id="english-toggle">
-                <div class="toggle">
-                    <div class="toggle-handle"></div>
-                </div>
-            </div>
-        </div>
-        <div class="french-lang-choice">
-            <div id="french-language-choice">
-                <p>Français</p>
-            </div>
-            <div id="french-toggle">
-                <div class="toggle">
-                    <div class="toggle-handle"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Include the compiled Ratchet JS -->
-    <script src="http://localhost/ratchet-2.0.2/dist/js/ratchet.js"></script>
-    <script src="http://localhost/js/main.js"></script>
 </body>
 
 </html>
